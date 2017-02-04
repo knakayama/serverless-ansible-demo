@@ -1,0 +1,6 @@
+---
+- name: Obtain facts from Serverless Framework Stack
+  cloudformation_facts:
+    region: "{{ region }}"
+    stack_name: "{{ service_name }}-{{ stage }}"
+    stack_resources: true

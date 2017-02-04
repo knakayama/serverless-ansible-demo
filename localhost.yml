@@ -1,0 +1,7 @@
+---
+- name: Deploy Serverless Framework
+  hosts: localhost
+  connection: local
+  roles:
+    - { role: serverless, tags: [ serverless ] }
+    - { role: cloudformation, tags: [ cloudformation ] }

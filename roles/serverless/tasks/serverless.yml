@@ -1,0 +1,7 @@
+---
+- name: Deploy all functions
+  serverless:
+    service_path: "{{ service_path }}"
+    stage: "{{ stage }}"
+    region: "{{ region }}"
+    state: present
